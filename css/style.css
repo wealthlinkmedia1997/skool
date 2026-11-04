@@ -114,6 +114,7 @@ a{color:var(--gold-hi)}
 .hero-step{margin:0;max-width:680px;text-align:center;font-size:18px;line-height:1.5;color:#f4efe2}
 .hero-step a{color:var(--gold-hi);font-weight:800;text-underline-offset:3px}
 .hero-secondary{background:transparent;color:var(--gold-hi);border:2px solid var(--gold);box-shadow:none;font-family:Montserrat,Arial,sans-serif;font-size:16px;font-weight:700;padding:12px 18px;border-radius:10px}
+.cta-pair .hero-secondary{align-self:center;flex:0 1 auto;max-width:100%}
 .hero-secondary:hover{background:rgba(197,154,46,.14);color:#fff;filter:none}
 .hero-warn{text-align:center;font-family:Montserrat,Arial,sans-serif;font-weight:500;font-size:18px;line-height:1.5;color:#f4efe2;max-width:860px;margin:22px auto 0}
 .hero-warn b{font-weight:800;color:#fff}

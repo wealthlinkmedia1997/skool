@@ -23,7 +23,7 @@ window.SITE_CONFIG = {
   TIKTOK_PIXEL_ID: "",
 
   /* ---- Contact (privacy / terms / help button) -------------- */
-  CONTACT_EMAIL: "support@wealthlinkmedia.com",
+  CONTACT_EMAIL: "admin@wealthlinkmedia.com",
 
   /* ---- Video reviews (index + main) -------------------------
      Left card is the original review. Right card is review 3.   */
