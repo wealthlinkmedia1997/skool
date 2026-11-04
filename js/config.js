@@ -26,11 +26,9 @@ window.SITE_CONFIG = {
   CONTACT_EMAIL: "support@wealthlinkmedia.com",
 
   /* ---- Video reviews (secondary page) -----------------------
-     Right now the same review is used twice. To add the second
-     review: upload the files to assets/videos/ and change the
-     second entry's src / poster / name.                         */
+     First card is the newer review; second card is the original. */
   REVIEW_VIDEOS: [
-    { name: "Client review 1", src: "assets/videos/review-1.mp4", poster: "assets/videos/review-1.jpg" },
-    { name: "Client review 2", src: "assets/videos/review-1.mp4", poster: "assets/videos/review-1.jpg" }
+    { name: "Client review 2", src: "assets/videos/review2.mp4", poster: "assets/review2-poster.jpg" },
+    { name: "Client review 1", src: "assets/videos/review-1.mp4", poster: "assets/videos/review-1.jpg" }
   ]
 };

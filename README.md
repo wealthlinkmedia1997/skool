@@ -12,7 +12,7 @@ Static 2-page funnel (no build step).
 
 ## Swapping assets
 - Client result screenshots: `assets/results/{melissa,bilal,kaden,adelina}.jpg` plus `.webp` (about 900px wide, native aspect ratios, shown uncropped, click to zoom). Order on the page: Melissa, Kaden, Bilal, Adelina. Desktop columns: left Melissa then Bilal, right Kaden then Adelina.
-- Video review: `assets/videos/review-1.mp4` + `review-1.jpg`. Second review: add `review-2.mp4/.jpg` and edit the 2nd entry of `REVIEW_VIDEOS` in `js/config.js`.
+- Video reviews (`REVIEW_VIDEOS` in `js/config.js`, shown on `main.html`): first card is `assets/videos/review2.mp4` with `assets/review2-poster.jpg`; second card is `assets/videos/review-1.mp4` with `assets/videos/review-1.jpg`.
 - Bonus visuals: `assets/bonus/*.svg` (replace with screenshots, keep the filename or edit `main.html`).
 - Founder photo: `assets/andre.jpg` (about section on `main.html`).
 - Logo: `assets/logo.webp` with `assets/logo.png` fallback. Favicon: `assets/favicon.png`.
