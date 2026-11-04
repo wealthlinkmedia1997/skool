@@ -98,14 +98,22 @@ a{color:var(--gold-hi)}
    ====================================================== */
 .p-main{font-family:Lato,Arial,sans-serif}
 .p-main h1,.p-main h2,.p-main h3,.p-main .mont{font-family:Montserrat,Arial,sans-serif}
-.topbar{background:linear-gradient(180deg,#f2e187,#c59a2e);color:#0a0a0a;text-align:center;font-family:Montserrat,Arial,sans-serif;
-  font-weight:700;font-size:18px;line-height:1.35;padding:10px 16px;display:flex;align-items:center;justify-content:center;gap:10px}
+.topbar{background:#d01212;color:#fff;text-align:center;font-family:Montserrat,Arial,sans-serif;
+  font-weight:800;font-size:18px;line-height:1.35;padding:12px 18px;display:flex;align-items:center;justify-content:center;gap:10px}
 .topbar svg{flex:none}
 .topbar span{display:block}
 .kicker{text-align:center;font-family:Montserrat,Arial,sans-serif;font-weight:700;font-size:16px;margin:12px 0 0}
 .kicker a,.kicker span{color:var(--gold-hi);text-decoration:underline}
-.m-hero h1{text-align:center;font-weight:700;font-size:46px;line-height:1.22;margin:40px auto 28px}
-.m-hero h1 u{color:var(--gold-hi);text-decoration:underline;text-underline-offset:4px}
+.hero-kicker{text-align:center;font-family:Montserrat,Arial,sans-serif;font-weight:800;font-size:20px;line-height:1.35;color:var(--gold-hi);margin:32px auto 16px}
+.hero-kicker u{text-underline-offset:4px;text-decoration-thickness:2px}
+.m-hero h1{text-align:center;font-weight:800;font-size:48px;line-height:1.18;margin:0 auto 32px;max-width:1080px}
+.m-hero h1 .h1-line{display:block}
+.m-hero h1 u{color:var(--gold-hi);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:3px}
+.hero-warn{text-align:center;font-family:Montserrat,Arial,sans-serif;font-weight:500;font-size:18px;line-height:1.5;color:#f4efe2;max-width:860px;margin:22px auto 0}
+.hero-warn b{font-weight:800;color:#fff}
+.m-hero .cta-btn{flex:1 1 340px;max-width:540px;min-height:86px;border-radius:12px;padding:16px 22px}
+.m-hero .cta-btn .b1{font-size:22px;font-weight:800}
+.m-hero .cta-btn .b2{font-size:15px;font-weight:600}
 .m-sub{text-align:center;font-family:Lato,Arial,sans-serif;font-size:21px;line-height:1.5;color:var(--muted);max-width:920px;margin:0 auto 32px}
 .cta-pair{display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
 .cta-btn{flex:1 1 280px;width:auto;max-width:420px;min-height:68px;flex-direction:column;gap:3px;padding:14px 20px;text-align:center;
@@ -249,7 +257,14 @@ a{color:var(--gold-hi)}
   .home-cta{font-size:18px;padding:14px 22px}
   .home-beginner{font-size:16px}
   .topbar{font-size:16px;padding:10px 14px}
-  .m-hero h1{font-size:30px;margin:28px auto 20px}
+  .hero-kicker{font-size:16px;margin-top:24px}
+  .m-hero h1{font-size:32px;margin:0 auto 22px}
+  .m-hero h1 .h1-line{display:inline}
+  .m-hero .cta-pair{flex-direction:column;align-items:center}
+  .m-hero .cta-btn{width:100%;max-width:480px;min-height:76px;flex:0 0 auto}
+  .m-hero .cta-btn .b1{font-size:18px}
+  .m-hero .cta-btn .b2{font-size:14px}
+  .hero-warn{font-size:16.5px}
   .m-sub{font-size:17px}
   .cta-pair{gap:14px}
   .cta-btn{flex-basis:100%;max-width:440px;min-height:64px}
@@ -302,6 +317,7 @@ a{color:var(--gold-hi)}
   .brand img{height:32px}
   .header-nav a{font-size:16px}
   .home-hero h1{font-size:27px}
-  .m-hero h1,.support-hero h1{font-size:27px}
+  .m-hero h1{font-size:28px}
+  .support-hero h1{font-size:27px}
   .site-footer .flogo img{height:36px}
 }
