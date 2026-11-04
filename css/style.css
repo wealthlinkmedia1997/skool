@@ -53,12 +53,13 @@ a{color:var(--gold-hi)}
    ====================================================== */
 .p-home{font-family:"Open Sans",Arial,sans-serif}
 .home-hero{text-align:center;padding:36px 0 8px}
-.home-eyebrow{font-size:20px;color:var(--gold);margin:0 0 16px;font-weight:600}
-.home-hero h1{font-size:48px;line-height:1.2;font-weight:700;margin:0 auto 18px;letter-spacing:-.3px}
-.home-sub{font-size:22px;color:var(--gold);margin:0 auto 28px;max-width:920px;line-height:1.4}
-.home-cta{font-size:22px;font-weight:700;padding:16px 34px;font-family:"Open Sans",Arial,sans-serif}
-.home-cta svg{width:20px;height:20px;margin-left:-2px}
-.home-beginner{font-family:Lato,Arial,sans-serif;font-weight:700;font-size:18px;margin:18px 0 0;color:#fff}
+.home-eyebrow{font-size:18px;color:var(--gold-hi);margin:0 0 14px;font-weight:800;letter-spacing:.02em}
+.home-hero h1{font-size:48px;line-height:1.18;font-weight:800;margin:0 auto 18px;letter-spacing:-.3px}
+.home-hero h1 .h1-seo{display:block;margin-top:12px;font-weight:800}
+.home-sub{font-size:22px;color:var(--gold-hi);font-weight:700;margin:0 auto 28px;max-width:920px;line-height:1.4}
+.home-cta{font-size:22px;font-weight:800;padding:16px 36px;font-family:"Open Sans",Arial,sans-serif;background:#e0b33a;color:#0a0a0a;cursor:pointer;border-radius:8px}
+.home-cta svg{width:22px;height:22px;margin-left:2px;flex:none}
+.home-beginner{font-family:Lato,Arial,sans-serif;font-weight:800;font-size:18px;margin:18px 0 0;color:#fff}
 
 .site-footer{margin-top:56px;border-top:1px solid var(--line);font-family:Lato,Arial,sans-serif}
 .footer-inner{padding-top:36px;padding-bottom:42px}
