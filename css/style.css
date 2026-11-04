@@ -1,0 +1,214 @@
+/* WealthLink Media – Skool LP. Black & gold palette taken from the logo. */
+:root{
+  --bg:#0a0a0a; --bg2:#121212; --card:#151515; --line:#3a2f12;
+  --gold:#c59a2e; --gold-hi:#f2e187; --gold-lo:#8a6a14;
+  --text:#ffffff; --muted:#cfc7b0;
+  --btn-grad:linear-gradient(180deg,#f2e187 0%,#d9b24a 45%,#c59a2e 100%);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--gold-hi)}
+.noscroll{overflow:hidden}
+.wrap{width:100%;max-width:880px;margin:0 auto;padding:0 20px}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;text-decoration:none;
+  background:var(--btn-grad);color:#0a0a0a;border-radius:6px;box-shadow:0 6px 22px rgba(197,154,46,.28);
+  transition:transform .15s ease,box-shadow .15s ease,filter .15s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(197,154,46,.42);filter:brightness(1.05)}
+.btn:active{transform:translateY(0)}
+.btn[disabled]{opacity:.7;cursor:default;transform:none}
+
+/* ======================================================
+   PRIMARY PAGE  (clone of stonescaling.com/)
+   ====================================================== */
+.p-home{font-family:"Open Sans",Arial,sans-serif}
+.home-hero{text-align:center;padding:28px 0 8px}
+.home-eyebrow{font-size:16px;color:var(--gold);margin:0 0 14px;font-weight:400}
+.home-hero h1{font-size:34px;line-height:1.3;font-weight:700;margin:0 auto 14px;max-width:760px;letter-spacing:-.2px}
+.home-sub{font-size:18px;color:var(--gold);margin:0 0 24px}
+.home-cta{font-size:20px;font-weight:700;padding:14px 28px;font-family:"Open Sans",Arial,sans-serif}
+.home-cta svg{width:18px;height:18px;margin-left:-2px}
+.home-beginner{font-family:Lato,Arial,sans-serif;font-weight:700;font-size:15px;margin:16px 0 0;color:#fff}
+
+.site-footer{margin-top:48px;padding:34px 0 40px;border-top:1px solid var(--line);text-align:center;font-family:Lato,Arial,sans-serif}
+.site-footer .flogo{height:46px;width:auto;margin:0 auto 18px}
+.footer-links{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;font-size:13px;margin-top:6px}
+.footer-links a,.footer-links span{color:var(--text);text-decoration:none;font-weight:400}
+.footer-links a:hover{color:var(--gold-hi);text-decoration:underline}
+.footer-links span{font-weight:700}
+
+/* lead modal */
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:18px;
+  background:rgba(0,0,0,.78);backdrop-filter:blur(3px)}
+.modal.open{display:flex}
+.modal-card{position:relative;width:100%;max-width:440px;background:#111;border:1px solid var(--gold-lo);border-radius:14px;
+  padding:32px 28px 26px;box-shadow:0 20px 60px rgba(0,0,0,.7),0 0 0 1px rgba(242,225,135,.08) inset;text-align:center}
+.modal-x{position:absolute;top:10px;right:12px;width:34px;height:34px;border:0;background:transparent;color:var(--muted);
+  font-size:26px;line-height:1;cursor:pointer;border-radius:50%}
+.modal-x:hover{color:#fff;background:#222}
+.modal-card img.mlogo{height:40px;width:auto;margin:0 auto 16px}
+.modal-card h2{margin:0 0 8px;font-size:24px;font-weight:700}
+.modal-card p.msub{margin:0 0 20px;font-size:15px;color:var(--muted)}
+.modal-card label{display:block;text-align:left;font-size:13px;font-weight:600;margin:0 0 6px;color:var(--gold-hi)}
+.modal-card input{width:100%;padding:13px 14px;font-size:16px;font-family:inherit;border-radius:8px;border:1px solid #3b3417;
+  background:#0a0a0a;color:#fff;margin-bottom:16px;outline:none}
+.modal-card input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(197,154,46,.25)}
+.modal-card .btn{width:100%;font-size:18px;font-weight:700;padding:14px 18px;font-family:inherit}
+.lf-error{min-height:20px;color:#ff8a80;font-size:14px;margin:-4px 0 10px;text-align:left}
+.lf-fine{font-size:12px;color:#9c9478;margin:14px 0 0;line-height:1.5}
+.lf-fine a{color:var(--gold)}
+
+/* ======================================================
+   SECONDARY PAGE  (clone of stonescaling.com/main)
+   ====================================================== */
+.p-main{font-family:Lato,Arial,sans-serif}
+.p-main h1,.p-main h2,.p-main h3,.p-main .mont{font-family:Montserrat,Arial,sans-serif}
+.topbar{background:linear-gradient(180deg,#f2e187,#c59a2e);color:#0a0a0a;text-align:center;font-family:Montserrat,Arial,sans-serif;
+  font-weight:700;font-size:17px;padding:8px 14px;display:flex;align-items:center;justify-content:center;gap:8px}
+.topbar svg{flex:none}
+.kicker{text-align:center;font-family:Montserrat,Arial,sans-serif;font-weight:700;font-size:14px;margin:12px 0 0}
+.kicker a,.kicker span{color:var(--gold-hi);text-decoration:underline}
+.m-hero h1{text-align:center;font-weight:700;font-size:38px;line-height:1.3;margin:42px auto 34px;max-width:780px}
+.m-hero h1 u{color:var(--gold-hi);text-decoration:underline;text-underline-offset:4px}
+.cta-pair{display:flex;gap:34px;justify-content:center;flex-wrap:wrap}
+.cta-btn{flex:0 0 auto;width:262px;min-height:54px;flex-direction:column;gap:2px;padding:9px 12px;text-align:center;
+  font-family:Montserrat,Arial,sans-serif;border-radius:6px;font-weight:500}
+.cta-btn .b1{font-size:15px;font-weight:500;line-height:1.25}
+.cta-btn .b2{font-size:10.5px;font-weight:600;line-height:1.2;opacity:.85}
+.cta-note{text-align:center;font-family:Montserrat,Arial,sans-serif;font-size:13.5px;line-height:1.4;color:var(--muted);max-width:440px;margin:22px auto 0}
+.cta-note b{color:#fff}
+.sec-title{font-family:Montserrat,Arial,sans-serif;text-align:center;font-weight:700;font-size:27px;margin:62px 0 30px}
+.sec-title.sm{font-size:30px}
+
+.video-grid{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin:0 auto;max-width:800px}
+.vthumb{position:relative;display:block;width:220px;aspect-ratio:9/16;padding:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;
+  background:#000;cursor:pointer}
+.vthumb img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;transition:transform .3s ease}
+.vthumb:hover img{transform:scale(1.05)}
+.vplay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:34px;border-radius:9px;
+  background:rgba(10,10,10,.72);color:var(--gold-hi);display:flex;align-items:center;justify-content:center;border:1px solid rgba(242,225,135,.4)}
+.vthumb:hover .vplay{background:var(--gold);color:#0a0a0a}
+.video-modal .modal-card{max-width:420px;padding:12px;background:#000}
+.video-modal video{width:100%;max-height:78vh;border-radius:8px;background:#000;display:block}
+.video-modal .modal-x{top:-44px;right:0;color:#fff;font-size:30px}
+
+
+.bonus-head{text-align:center;margin-top:76px}
+.bonus-head h2{font-size:31px;margin:0 0 10px;font-weight:700}
+.bonus-head .worth{font-family:Montserrat,Arial,sans-serif;color:var(--gold-hi);font-weight:700;font-size:18px;margin:0 0 14px}
+.bonus-head .subline{font-weight:700;font-size:14.5px;margin:0}
+.bonuses{max-width:800px;margin:44px auto 0}
+.bonus{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;padding:38px 0;border-bottom:1px solid #4a3b14}
+.bonus:last-child{border-bottom:0}
+.bonus h3{font-size:21px;font-weight:700;margin:0 0 12px;line-height:1.3}
+.bonus p{font-size:15.5px;line-height:1.5;margin:0 0 10px;color:#efe9d6}
+.bonus .val{display:block;text-align:center;font-family:Montserrat,Arial,sans-serif;font-weight:700;font-size:18px;color:var(--gold-hi);text-decoration:underline;margin-top:6px}
+.bonus img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.bonus .copy{padding-right:6px}
+
+.guarantee h2{font-family:Arial,Helvetica,sans-serif;font-style:italic;font-weight:700;font-size:35px;text-align:center;margin:70px 0 28px;color:var(--gold-hi)}
+.guarantee .g-body{max-width:640px;margin:0 auto;text-align:center;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:13.5px;line-height:1.35}
+.guarantee .g-body p{margin:0 0 15px}
+
+.faq{max-width:780px;margin:0 auto}
+.faq h2{font-size:27px;text-align:center;margin:60px 0 12px;font-family:Montserrat,Arial,sans-serif;font-weight:700}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:7px;margin:8px 0}
+.faq summary{list-style:none;cursor:pointer;padding:14px 44px 14px 12px;font-family:Montserrat,Arial,sans-serif;font-size:15px;line-height:1.35;position:relative;color:#f4efe0}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:16px;top:50%;width:8px;height:8px;margin-top:-6px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg);margin-top:-2px}
+.faq details[open] summary{border-bottom:1px solid var(--line)}
+.faq .ans{padding:14px 14px 6px;font-size:15.5px;line-height:1.55;color:#efe9d6}
+.faq .ans p{margin:0 0 14px}
+
+.about h2{font-size:30px;text-align:center;margin:62px 0 22px;font-weight:700}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center;max-width:790px;margin:0 auto}
+.about-grid img{width:100%;border-radius:8px;border:1px solid var(--line)}
+.about-grid .txt{font-size:16.5px;line-height:1.45}
+.about-grid .txt p{margin:0 0 18px}
+.help-btn{display:flex;margin:32px auto 0;max-width:460px;width:100%;flex-direction:column;padding:9px 12px;font-family:Montserrat,Arial,sans-serif;border-radius:6px;text-align:center;gap:2px}
+.help-btn .b1{font-size:18px}.help-btn .b2{font-size:12px;font-weight:600}
+.disclosures{max-width:830px;margin:50px auto 0;text-align:center;font-size:12.5px;line-height:1.5;font-weight:700;color:#e9e2cc}
+.disclosures p{margin:0 0 18px}
+.p-main .site-footer{margin-top:36px;border-top:0}
+.p-main .site-footer .flogo{height:58px}
+.p-main .footer-links{justify-content:space-between;max-width:760px;margin:26px auto 0}
+
+/* ======================================================
+   LEGAL PAGES
+   ====================================================== */
+.legal{font-family:"Open Sans",Arial,sans-serif;background:var(--bg)}
+.legal-head{border-bottom:1px solid var(--line);padding:16px 0;text-align:center}
+.legal-head img{height:44px;width:auto;margin:0 auto}
+.legal-body{max-width:800px;margin:0 auto;padding:40px 20px 20px}
+.legal-body h1{font-size:34px;margin:0 0 20px;color:var(--gold-hi)}
+.legal-body h2{font-size:21px;margin:34px 0 10px;color:var(--gold-hi)}
+.legal-body p,.legal-body li{font-size:15.5px;line-height:1.7;color:#e6dfc9}
+.legal-body ul{padding-left:22px}
+.legal-body strong{color:#fff}
+.legal-body a{color:var(--gold-hi)}
+.back{display:inline-block;margin:0 0 20px;font-size:14px}
+
+/* ======================================================
+   MOBILE
+   ====================================================== */
+@media (max-width:640px){
+  .home-hero{padding-top:22px}
+  .results-grid{grid-template-columns:1fr;gap:16px;margin-top:34px}
+  .m-sub{font-size:16.5px}
+  .sec-sub{font-size:15px}
+  .home-hero h1{font-size:25px}
+  .home-sub{font-size:16px}
+  .home-cta{font-size:18px;padding:13px 22px}
+  .topbar{font-size:14px;padding:8px 10px}
+  .kicker{font-size:13px}
+  .m-hero h1{font-size:26px;margin:30px auto 26px}
+  .cta-pair{gap:14px}
+  .cta-btn{width:100%;max-width:340px}
+  .sec-title{font-size:23px;margin:48px 0 22px}
+  .video-grid{gap:14px;flex-wrap:nowrap}
+  .vthumb{width:calc(50% - 7px);max-width:220px}
+  .bonus-head h2{font-size:25px}
+  .bonus{grid-template-columns:1fr;gap:18px;padding:30px 0}
+  .bonus .copy{padding-right:0;text-align:left}
+  .bonus .val{text-align:left}
+  .guarantee h2{font-size:27px;margin-top:54px}
+  .faq h2,.about h2{font-size:24px}
+  .about-grid{grid-template-columns:1fr}
+  .about-grid .txt{font-size:16px}
+  .p-main .footer-links{flex-direction:column;align-items:center;gap:12px}
+  .legal-body h1{font-size:27px}
+  .modal-card{padding:28px 20px 22px}
+}
+
+/* ---------- results screenshots: 2x2, never cropped ---------- */
+.results-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:960px;margin:44px auto 0}
+.results-grid figure{margin:0;background:#000;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.5)}
+.results-grid img{width:100%;height:auto;object-fit:contain;display:block;cursor:zoom-in}
+.p-main .results-grid{margin-top:34px}
+.p-home .wrap{max-width:1000px}
+.p-home .home-hero{max-width:880px;margin:0 auto}
+.m-sub{text-align:center;font-family:Lato,Arial,sans-serif;font-size:19px;line-height:1.5;color:var(--muted);max-width:720px;margin:0 auto 32px}
+.sec-sub{text-align:center;font-size:17px;color:var(--muted);margin:-14px 0 28px}
+.about-sub{text-align:center;font-family:Montserrat,Arial,sans-serif;font-weight:600;color:var(--gold-hi);margin:-8px 0 26px;font-size:17px}
+.img-modal{padding:0;align-items:stretch;justify-content:center;background:rgba(0,0,0,.92)}
+.img-modal .modal-x{position:fixed;top:12px;right:14px;z-index:2;background:rgba(0,0,0,.6);color:#fff}
+.img-scroll{width:100%;max-width:940px;overflow:auto;-webkit-overflow-scrolling:touch;padding:56px 12px 24px}
+.img-scroll img{width:100%;height:auto;border-radius:10px;margin:0 auto}
+.topbar span{display:block}
+img,video{max-width:100%}
+@media (max-width:640px){
+  .results-grid{grid-template-columns:1fr;gap:16px;margin-top:34px}
+  .p-home .wrap{max-width:880px}
+}
+@media (max-width:380px){
+  .home-hero h1{font-size:22px}
+  .m-hero h1{font-size:23px}
+  .topbar{font-size:13px}
+  .vthumb{width:calc(50% - 7px)}
+  .cta-btn .b1{font-size:14px}
+  .footer-links{gap:14px 20px}
+}

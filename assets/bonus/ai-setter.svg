@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="680" height="420">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b1608"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2e187"/><stop offset="1" stop-color="#c59a2e"/></linearGradient>
+<pattern id="p" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#c59a2e" stroke-opacity=".08"/></pattern></defs>
+<rect width="680" height="420" fill="url(#bg)"/><rect width="680" height="420" fill="url(#p)"/>
+<rect x="12" y="12" width="656" height="396" rx="14" fill="none" stroke="#c59a2e" stroke-opacity=".35"/>
+<g transform="translate(220 62) scale(2.0)" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="22" y="32" width="76" height="56" rx="14"/><circle cx="44" cy="58" r="7"/><circle cx="76" cy="58" r="7"/><path d="M46 76h28M60 32V18"/><circle cx="60" cy="14" r="4"/><path d="M10 54v12M110 54v12"/></g>
+<text x="340" y="344" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="30" fill="#fff">AI Appointment Setter</text>
+<text x="340" y="378" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-weight="600" font-size="15" letter-spacing="3" fill="#c59a2e">WEALTHLINK MEDIA</text>
+</svg>
