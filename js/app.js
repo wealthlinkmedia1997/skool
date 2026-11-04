@@ -36,11 +36,30 @@
   }
 
   /* ---------- Config-driven links / text ---------- */
-  $$("[data-cta='ghl']").forEach(function (a) { if (C.GHL_URL) a.href = C.GHL_URL; });
+  $$("[data-cta='ghl']").forEach(function (a) {
+    if (C.GHL_URL) {
+      a.href = C.GHL_URL;
+      if (a.hasAttribute("data-show-url")) a.textContent = C.GHL_URL;
+    }
+  });
   $$("[data-cta='whop']").forEach(function (a) { a.href = C.WHOP_URL || "#"; });
-  $$("[data-cta='support']").forEach(function (a) { a.href = C.SUPPORT_URL || "#"; });
+  $$("[data-cta='support']").forEach(function (a) { a.href = C.SUPPORT_URL || "support.html"; });
   $$("[data-contact]").forEach(function (a) {
-    if (a.tagName === "A") a.href = "mailto:" + C.CONTACT_EMAIL; else a.textContent = C.CONTACT_EMAIL;
+    if (a.tagName === "A") {
+      a.href = "mailto:" + C.CONTACT_EMAIL;
+      if (a.hasAttribute("data-show-email")) a.textContent = C.CONTACT_EMAIL;
+    } else a.textContent = C.CONTACT_EMAIL;
+  });
+  $$("[data-copy]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var el = document.getElementById(btn.getAttribute("data-copy"));
+      if (!el || !navigator.clipboard) return;
+      var label = btn.textContent;
+      navigator.clipboard.writeText(el.innerText.trim()).then(function () {
+        btn.textContent = "Copied";
+        setTimeout(function () { btn.textContent = label; }, 1600);
+      }, function () {});
+    });
   });
   $$(".js-year").forEach(function (e) { e.textContent = new Date().getFullYear(); });
 

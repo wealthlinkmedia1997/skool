@@ -10,7 +10,19 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="legal">
-<header class="legal-head"><a href="index.html"><img src="assets/logo.png" alt="WealthLink Media"></a></header>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <picture>
+        <source srcset="assets/logo.webp" type="image/webp">
+        <img src="assets/logo.png" alt="WealthLink Media" width="961" height="187">
+      </picture>
+    </a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
 <main class="legal-body">
 <a class="back" href="index.html">&larr; Back to home</a>
 <h1>Terms &amp; Conditions</h1>
@@ -92,11 +104,17 @@
 <p>For any queries or concerns regarding these Terms and Conditions, please contact WealthLink Media at <a data-contact href="mailto:support@wealthlinkmedia.com">support@wealthlinkmedia.com</a></p>
 </main>
 <footer class="site-footer">
-  <img class="flogo" src="assets/logo.png" alt="WealthLink Media">
-  <div class="footer-links">
-    <span>WealthLink Media © <span class="js-year">2026</span>. All Rights Reserved</span>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms &amp; Conditions</a>
+  <div class="footer-inner">
+    <picture class="flogo">
+      <source srcset="assets/logo.webp" type="image/webp">
+      <img src="assets/logo.png" alt="WealthLink Media" width="961" height="187">
+    </picture>
+    <div class="footer-links">
+      <span>WealthLink Media © <span class="js-year">2026</span>. All Rights Reserved</span>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html" aria-current="page">Terms &amp; Conditions</a>
+      <a href="support.html">Support</a>
+    </div>
   </div>
 </footer>
 <script src="js/config.js"></script>

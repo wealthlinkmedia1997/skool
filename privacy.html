@@ -10,7 +10,19 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="legal">
-<header class="legal-head"><a href="index.html"><img src="assets/logo.png" alt="WealthLink Media"></a></header>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <picture>
+        <source srcset="assets/logo.webp" type="image/webp">
+        <img src="assets/logo.png" alt="WealthLink Media" width="961" height="187">
+      </picture>
+    </a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
 <main class="legal-body">
 <a class="back" href="index.html">&larr; Back to home</a>
 <h1>Privacy Policy</h1>
@@ -22,9 +34,9 @@
 <p><strong>Support:</strong> If you need assistance with our SMS communications, you can text <strong>HELP</strong> for more information.</p>
 
 <h2>Interpretation and Definitions</h2>
-<h2 style="font-size:17px;margin-top:18px">Interpretation</h2>
+<h2 class="subhead">Interpretation</h2>
 <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
-<h2 style="font-size:17px;margin-top:18px">Definitions</h2>
+<h2 class="subhead">Definitions</h2>
 <p>For the purposes of this Privacy Policy:</p>
 <ul>
 <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to WealthLink Media.</li>
@@ -34,7 +46,7 @@
 </ul>
 
 <h2>Collecting and Using Your Personal Data</h2>
-<h2 style="font-size:17px;margin-top:18px">Types of Data Collected</h2>
+<h2 class="subhead">Types of Data Collected</h2>
 <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
 <ul>
 <li>First and last name</li>
@@ -69,11 +81,17 @@
 <p>If you have any questions about this Privacy Policy, You can contact us via email at <a data-contact href="mailto:support@wealthlinkmedia.com">support@wealthlinkmedia.com</a></p>
 </main>
 <footer class="site-footer">
-  <img class="flogo" src="assets/logo.png" alt="WealthLink Media">
-  <div class="footer-links">
-    <span>WealthLink Media © <span class="js-year">2026</span>. All Rights Reserved</span>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms &amp; Conditions</a>
+  <div class="footer-inner">
+    <picture class="flogo">
+      <source srcset="assets/logo.webp" type="image/webp">
+      <img src="assets/logo.png" alt="WealthLink Media" width="961" height="187">
+    </picture>
+    <div class="footer-links">
+      <span>WealthLink Media © <span class="js-year">2026</span>. All Rights Reserved</span>
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="support.html">Support</a>
+    </div>
   </div>
 </footer>
 <script src="js/config.js"></script>
