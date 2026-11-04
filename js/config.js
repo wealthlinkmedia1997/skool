@@ -7,7 +7,7 @@ window.SITE_CONFIG = {
      Paste the GoHighLevel inbound-webhook URL here.
      While this is empty ("") the form skips the POST and just
      redirects to the secondary page.                           */
-  LEAD_WEBHOOK_URL: "",
+  LEAD_WEBHOOK_URL: "https://services.leadconnectorhq.com/hooks/oJyfQVqrbosEEz3hI106/webhook-trigger/8377473f-91c6-4cca-a95b-09479ae8ffe1",
   LEAD_SOURCE: "skool-lp-primary",     // sent as "source" in the payload
   NEXT_PAGE: "main.html",              // where the form sends people after submit
 
