@@ -13,7 +13,7 @@ window.SITE_CONFIG = {
 
   /* ---- Secondary page buttons ------------------------------- */
   GHL_URL: "https://www.gohighlevel.com/?fp_ref=tegicsystems",  // button 1
-  WHOP_URL: "#",                       // button 2 ("Already a HighLevel user? Upgrade...") + FAQ link – put the Whop $250 / upgrade link here
+  WHOP_URL: "https://whop.com/checkout/ch_pkWE0RMULDRdLfG/",  // $250/mo for people already on HighLevel
   SUPPORT_URL: "support.html",        // "Need help getting your bonuses?" button
 
   /* ---- Tracking placeholders (blank = off) ------------------ */
