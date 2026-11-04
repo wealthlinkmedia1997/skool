@@ -34,7 +34,7 @@ a{color:var(--gold-hi)}
 .site-header{border-bottom:1px solid var(--line);background:#0a0a0a}
 .header-inner{display:flex;align-items:center;justify-content:flex-end;gap:16px;padding-top:12px;padding-bottom:12px}
 .brand{display:inline-flex;align-items:center;min-width:0;line-height:0}
-.brand img,.flogo img,.mlogo img{height:52px;width:auto;max-width:min(460px,calc(100vw - 150px));object-fit:contain}
+.brand img,.flogo img{height:52px;width:auto;max-width:min(460px,calc(100vw - 150px));object-fit:contain}
 .header-nav{display:flex;align-items:center;gap:18px;flex:none}
 .header-nav a{color:#fff;text-decoration:none;font-weight:700;font-size:18px;letter-spacing:.01em}
 .header-nav a:hover,.header-nav a[aria-current="page"]{color:var(--gold-hi)}
@@ -80,8 +80,8 @@ a{color:var(--gold-hi)}
 .modal-x{position:absolute;top:10px;right:12px;width:36px;height:36px;border:0;background:transparent;color:var(--muted);
   font-size:28px;line-height:1;cursor:pointer;border-radius:50%}
 .modal-x:hover{color:#fff;background:#222}
-.mlogo{margin:0 auto 16px}
-.mlogo img{height:46px;margin:0 auto;max-width:100%}
+#lead-modal .modal-card{padding-top:42px}
+#lead-modal .modal-card h2{margin-top:0}
 .modal-card h2{margin:0 0 8px;font-size:28px;font-weight:700}
 .modal-card p.msub{margin:0 0 20px;font-size:17px;color:var(--muted);line-height:1.45}
 .modal-card label{display:block;text-align:left;font-size:15px;font-weight:600;margin:0 0 6px;color:var(--gold-hi)}
@@ -254,7 +254,6 @@ a{color:var(--gold-hi)}
   body{font-size:16.5px}
   .brand img{height:38px}
   .flogo img,.site-footer .flogo img{height:40px}
-  .mlogo img{height:36px}
   .header-nav a{font-size:16px}
   .home-hero{padding-top:24px}
   .home-eyebrow{font-size:16px}
