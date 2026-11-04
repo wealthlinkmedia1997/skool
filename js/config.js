@@ -25,10 +25,10 @@ window.SITE_CONFIG = {
   /* ---- Contact (privacy / terms / help button) -------------- */
   CONTACT_EMAIL: "support@wealthlinkmedia.com",
 
-  /* ---- Video reviews (secondary page) -----------------------
-     First card is the newer review; second card is the original. */
+  /* ---- Video reviews (index + main) -------------------------
+     Left card is review 2. Right card is review 3.              */
   REVIEW_VIDEOS: [
     { name: "Client review 2", src: "assets/videos/review2.mp4", poster: "assets/review2-poster.jpg" },
-    { name: "Client review 1", src: "assets/videos/review-1.mp4", poster: "assets/videos/review-1.jpg" }
+    { name: "Client review 3", src: "assets/videos/review3.mp4", poster: "assets/review3-poster.jpg" }
   ]
 };
