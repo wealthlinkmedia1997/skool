@@ -8,6 +8,7 @@ Static 2-page funnel (no build step).
 | `main.html` | Secondary page – button 1 = GoHighLevel link, button 2 = Whop $250 / upgrade link (`WHOP_URL`), support button = `SUPPORT_URL` |
 | `privacy.html`, `terms.html` | Legal pages (linked in every footer) |
 | `support.html` | Bonus troubleshooting (linked in every header and footer; `SUPPORT_URL`) |
+| `rankflow.html` | RankFlow SEO feature list (linked from the RankFlow bonus on `main.html`) |
 | `js/config.js` | **All settings**: `LEAD_WEBHOOK_URL`, `WHOP_URL`, `SUPPORT_URL`, `GHL_URL`, pixel IDs, contact email, video reviews |
 
 ## Swapping assets

@@ -149,6 +149,8 @@ a{color:var(--gold-hi)}
 .bonus h3{font-size:26px;font-weight:700;margin:0 0 12px;line-height:1.3}
 .bonus p{font-size:19px;line-height:1.5;margin:0 0 12px;color:#efe9d6}
 .bonus .val{display:block;text-align:left;font-family:Montserrat,Arial,sans-serif;font-weight:700;font-size:20px;color:var(--gold-hi);text-decoration:underline;margin-top:6px}
+.rf-more{display:inline-flex;align-items:center;margin-top:16px;padding:11px 16px;border:2px solid var(--gold);border-radius:8px;background:transparent;color:var(--gold-hi);font-family:Montserrat,Arial,sans-serif;font-weight:700;font-size:16px;line-height:1.3;text-decoration:none}
+.rf-more:hover{background:rgba(197,154,46,.14);color:#fff}
 .bonus img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
 .bonus .copy{padding-right:6px}
 
@@ -321,4 +323,35 @@ a{color:var(--gold-hi)}
   .m-hero h1{font-size:28px}
   .support-hero h1{font-size:27px}
   .site-footer .flogo img{height:36px}
+}
+
+/* ======================================================
+   RANKFLOW FEATURES
+   ====================================================== */
+.p-rankflow{font-family:Lato,Arial,sans-serif}
+.p-rankflow h1,.p-rankflow h2{font-family:Montserrat,Arial,sans-serif}
+.rf-hero{text-align:center;padding:40px 0 8px}
+.rf-hero h1{font-size:48px;line-height:1.15;font-weight:800;margin:0 0 12px}
+.rf-hero p{margin:0;color:var(--gold-hi);font-weight:700;font-size:20px}
+.rf-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:36px 0 8px}
+.rf-card{background:#14120c;border:1px solid var(--line);border-radius:14px;padding:22px 20px 16px}
+.rf-icon{width:36px;height:36px;color:var(--gold-hi);display:block}
+.rf-card h2{font-size:22px;line-height:1.25;font-weight:800;margin:12px 0 12px;color:#fff}
+.rf-card ul{margin:0;padding-left:18px}
+.rf-card li{margin:0 0 8px;font-size:17px;line-height:1.45;color:#efe9d6}
+.rf-end{text-align:center;margin-top:56px}
+.rf-end h2{font-size:36px;margin:0 0 22px;font-weight:800}
+@media (max-width:1024px){
+  .rf-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rf-hero h1{font-size:40px}
+}
+@media (max-width:768px){
+  .rf-grid{grid-template-columns:1fr;gap:16px}
+  .rf-hero{padding-top:28px}
+  .rf-hero h1{font-size:32px}
+  .rf-hero p{font-size:17px}
+  .rf-card h2{font-size:22px}
+  .rf-card li{font-size:16.5px}
+  .rf-end h2{font-size:28px}
+  .rf-end{margin-top:40px}
 }
