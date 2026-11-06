@@ -89,6 +89,7 @@ a{color:var(--gold-hi)}
   background:#0a0a0a;color:#fff;margin-bottom:16px;outline:none}
 .modal-card input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(197,154,46,.25)}
 .modal-card .btn{width:100%;font-size:20px;font-weight:700;padding:15px 18px;font-family:inherit}
+.lf-help{margin:-8px 0 16px;text-align:left;font-size:14px;line-height:1.4;color:#9c9478}
 .lf-error{min-height:22px;color:#ff8a80;font-size:16px;margin:-4px 0 10px;text-align:left}
 .lf-fine{font-size:14px;color:#9c9478;margin:14px 0 0;line-height:1.5}
 .lf-fine a{color:var(--gold)}

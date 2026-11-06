@@ -124,10 +124,12 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (submitted) return;
-      var name = $("#lf-name").value.trim(), email = $("#lf-email").value.trim();
+      var name = $("#lf-name").value.trim(), email = $("#lf-email").value.trim(), phone = $("#lf-phone").value.trim();
+      var phoneDigits = phone.replace(/\D/g, "");
       errBox.textContent = "";
       if (name.length < 2) { errBox.textContent = "Please enter your name."; $("#lf-name").focus(); return; }
       if (!emailRe.test(email)) { errBox.textContent = "Please enter a valid email address."; $("#lf-email").focus(); return; }
+      if (phoneDigits.length < 7) { errBox.textContent = "Please enter your phone number."; $("#lf-phone").focus(); return; }
 
       submitted = true; btn.disabled = true; btn.textContent = "Sending…";
 
@@ -137,6 +139,9 @@
         firstName: name.split(/\s+/)[0],
         lastName: name.split(/\s+/).slice(1).join(" "),
         email: email,
+        phone: phone,
+        tags: ["GHL Free Path"],
+        tag: "GHL Free Path",
         source: C.LEAD_SOURCE || "skool-lp",
         pageUrl: window.location.href,
         utm_source: q.get("utm_source") || "",
@@ -150,20 +155,19 @@
       if (window.gtag) try { gtag("event", "generate_lead"); } catch (x) {}
       if (window.ttq) try { ttq.track("SubmitForm"); } catch (x) {}
 
-      var go = function () { window.location.href = C.NEXT_PAGE || "main.html"; };
-      var posted = Promise.resolve();
+      var dest = C.GHL_URL || "https://www.gohighlevel.com/?fp_ref=tegicsystems";
       if (C.LEAD_WEBHOOK_URL) {
         try {
-          posted = fetch(C.LEAD_WEBHOOK_URL, {
+          fetch(C.LEAD_WEBHOOK_URL, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(payload),
             keepalive: true
           }).catch(function () {});
-        } catch (x) { posted = Promise.resolve(); }
+        } catch (x) {}
       }
-      // Redirect once the request has been handed off (max 1.2s wait; keepalive finishes it anyway).
-      Promise.race([posted, new Promise(function (r) { setTimeout(r, 1200); })]).then(go, go);
+      window.location.href = dest;
     });
+    openForm();
   }
 })();

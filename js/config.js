@@ -9,7 +9,6 @@ window.SITE_CONFIG = {
      redirects to the secondary page.                           */
   LEAD_WEBHOOK_URL: "https://services.leadconnectorhq.com/hooks/oJyfQVqrbosEEz3hI106/webhook-trigger/8377473f-91c6-4cca-a95b-09479ae8ffe1",
   LEAD_SOURCE: "skool-lp-primary",     // sent as "source" in the payload
-  NEXT_PAGE: "main.html",              // where the form sends people after submit
 
   /* ---- Secondary page buttons ------------------------------- */
   GHL_URL: "https://www.gohighlevel.com/?fp_ref=tegicsystems",  // button 1
