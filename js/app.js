@@ -108,14 +108,24 @@
   var fModal = $("#lead-modal");
   var form = $("#lead-form");
   if (fModal && form) {
-    var openForm = function () {
+    var pendingDest = "";
+    var pendingLabel = "";
+    var openForm = function (dest, label) {
+      pendingDest = dest || "";
+      pendingLabel = label || "";
       fModal.classList.add("open"); document.body.classList.add("noscroll");
       setTimeout(function () { var n = $("#lf-name"); if (n) n.focus(); }, 60);
     };
     var closeForm = function () { fModal.classList.remove("open"); document.body.classList.remove("noscroll"); };
-    $$("[data-open-form]").forEach(function (b) { b.addEventListener("click", function (e) { e.preventDefault(); openForm(); }); });
+    $$("a.btn").forEach(function (a) {
+      if (fModal.contains(a)) return;
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        openForm(a.href, (a.innerText || "").replace(/\s+/g, " ").trim());
+      });
+    });
     $$("[data-close-form]", fModal).forEach(function (b) { b.addEventListener("click", closeForm); });
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeForm(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && fModal.classList.contains("open")) closeForm(); });
 
     var submitted = false;   // double-submit guard: ONE post per page load / submit
     var errBox = $("#lf-error"), btn = $("#lf-submit");
@@ -142,6 +152,8 @@
         phone: phone,
         tags: ["GHL Free Path"],
         tag: "GHL Free Path",
+        clicked_button: pendingLabel,
+        destination: pendingDest,
         source: C.LEAD_SOURCE || "skool-lp",
         pageUrl: window.location.href,
         utm_source: q.get("utm_source") || "",
@@ -155,7 +167,7 @@
       if (window.gtag) try { gtag("event", "generate_lead"); } catch (x) {}
       if (window.ttq) try { ttq.track("SubmitForm"); } catch (x) {}
 
-      var dest = C.GHL_URL || "https://www.gohighlevel.com/?fp_ref=tegicsystems";
+      var dest = pendingDest || C.GHL_URL || "https://www.gohighlevel.com/?fp_ref=tegicsystems";
       if (C.LEAD_WEBHOOK_URL) {
         try {
           fetch(C.LEAD_WEBHOOK_URL, {
@@ -168,6 +180,5 @@
       }
       window.location.href = dest;
     });
-    openForm();
   }
 })();
