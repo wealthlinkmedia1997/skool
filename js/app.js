@@ -119,6 +119,9 @@
     var closeForm = function () { fModal.classList.remove("open"); document.body.classList.remove("noscroll"); };
     $$("a.btn").forEach(function (a) {
       if (fModal.contains(a)) return;
+      var hrefAttr = a.getAttribute("href") || "";
+      var isSupport = a.getAttribute("data-cta") === "support" || a.classList.contains("help-btn") || /(^|\/)support\.html([?#]|$)/.test(hrefAttr) || /\/support\.html([?#]|$)/.test(a.href);
+      if (isSupport) return;
       a.addEventListener("click", function (e) {
         e.preventDefault();
         openForm(a.href, (a.innerText || "").replace(/\s+/g, " ").trim());
